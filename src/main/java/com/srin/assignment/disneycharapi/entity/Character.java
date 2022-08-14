@@ -1,6 +1,5 @@
 package com.srin.assignment.disneycharapi.entity;
 
-import com.sun.istack.internal.NotNull;
 import lombok.*;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

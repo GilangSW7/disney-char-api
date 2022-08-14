@@ -2,7 +2,6 @@ package com.srin.assignment.disneycharapi.controller;
 
 import com.srin.assignment.disneycharapi.service.CharacterService;
 import com.srin.assignment.disneycharapi.entity.Character;
-import com.sun.istack.internal.NotNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -43,7 +42,7 @@ public class CharacterController {
     }
 
     @DeleteMapping("/{id}")
-    public Boolean deleteCharacter(@PathVariable("id") @NotNull String id){
+    public Boolean deleteCharacter(@PathVariable("id") String id){
         log.info("#deleteCharacter() with id : {}",id);
         return characterService.deleteCharacter(id);
     }
